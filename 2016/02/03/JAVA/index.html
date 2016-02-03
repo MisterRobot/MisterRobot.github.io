@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="JavaWeb," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
+<meta name="description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用hexo+markdown+github建立属于自己的第一个blog网站">
-<meta property="og:url" content="http://yoursite.com/2015/12/09/Hello-hexo/index.html">
+<meta property="og:title" content="网站开发防止乱码">
+<meta property="og:url" content="http://yoursite.com/2016/02/03/JAVA/index.html">
 <meta property="og:site_name" content="GHT's Blog">
-<meta property="og:description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
-<meta property="og:updated_time" content="2016-02-03T12:08:46.220Z">
+<meta property="og:description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
+<meta property="og:updated_time" content="2016-02-03T12:55:45.135Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用hexo+markdown+github建立属于自己的第一个blog网站">
-<meta name="twitter:description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
+<meta name="twitter:title" content="网站开发防止乱码">
+<meta name="twitter:description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> 用hexo+markdown+github建立属于自己的第一个blog网站 | GHT's Blog </title>
+  <title> 网站开发防止乱码 | GHT's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -214,7 +214,7 @@
             
             
               
-                用hexo+markdown+github建立属于自己的第一个blog网站
+                网站开发防止乱码
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-09T22:21:06+08:00" content="2015-12-09">
-              2015-12-09
+            <time itemprop="dateCreated" datetime="2016-02-03T20:05:06+08:00" content="2016-02-03">
+              2016-02-03
             </time>
           </span>
 
@@ -237,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/09/Hello-hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/09/Hello-hexo/" itemprop="commentsCount"></span>
+                <a href="/2016/02/03/JAVA/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/03/JAVA/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -259,15 +259,18 @@
       
 
       
-        <p>　　　最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -</p>
+        <blockquote>
+<p>学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案</p>
+</blockquote>
 <hr>
 <a id="more"></a>
-<h2 id="u5B89_u88C5Git"><a href="#u5B89_u88C5Git" class="headerlink" title="安装Git"></a>安装Git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自行百度</span><br></pre></td></tr></table></figure>
-<h2 id="u5B89_u88C5Node-js"><a href="#u5B89_u88C5Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>在 Windows 环境下安装 Node.js 非常简单，仅须下载安装文件并执行即可完成安装</p>
-<h2 id="u5B89_u88C5hexo"><a href="#u5B89_u88C5hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<h2 id="u521B_u5EFA_u6587_u4EF6_u5939"><a href="#u521B_u5EFA_u6587_u4EF6_u5939" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><p>安装完成后，在你喜爱的文件夹下（如<code>H:\hexo</code>），执行以下指令(在<code>H:\hexo</code>内点击鼠标右键，选择Git bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<h2 id="u521B_u5EFA_u6587_u4EF6_u5939-1"><a href="#u521B_u5EFA_u6587_u4EF6_u5939-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h2 id="u672C_u5730_u67E5_u770B"><a href="#u672C_u5730_u67E5_u770B" class="headerlink" title="本地查看"></a>本地查看</h2><p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在<code>H:\hexo</code>)，然后到浏览器输入<code>localhost:4000</code>看看。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h2 id="u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F"><a href="#u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F" class="headerlink" title="检查数据库编码格式"></a>检查数据库编码格式</h2><p></p><p>安装数据库的的时候没有选择<code>utf-8</code>的编码格式所以会导致传到数据库里面的数据发生乱码</p><p></p>
+<h2 id="u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F"><a href="#u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F" class="headerlink" title="修改JSP页面编码格式"></a>修改JSP页面编码格式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">"text/html; charset=UTF-8"</span> %&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F"><a href="#u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F" class="headerlink" title="设置request编码格式"></a>设置request编码格式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F"><a href="#u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F" class="headerlink" title="修改Tomcat编码格式"></a>修改Tomcat编码格式</h2><p> 修改Tomcat根目录中conf子目录下的server.xml文件，在中加入URIEncoding=”UTF-8”<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Connector connectionTimeout=<span class="string">"20000"</span></span><br><span class="line">port=<span class="string">"8080"</span></span><br><span class="line">protocol=<span class="string">"HTTP/1.1"</span></span><br><span class="line">redirectPort=<span class="string">"8443"</span></span><br><span class="line">URIEncoding=<span class="string">"UTF-8"</span>/&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="New_String_28_29_u65B9_u6CD5"><a href="#New_String_28_29_u65B9_u6CD5" class="headerlink" title="New String()方法"></a>New String()方法</h2><p>用户在使用这个方法的时候需要确定源编码和目标编码各是什么，才能解决中文乱码问题。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String p = <span class="keyword">new</span> String(p.getBytes(“ISO-<span class="number">8859</span>-<span class="number">1</span>”),”utf-<span class="number">8</span>”)</span><br></pre></td></tr></table></figure></p>
+<p>一般使用这个就可以完美解决乱码问题</p>
+<h2 id="SpringMVC_u4E71_u7801"><a href="#SpringMVC_u4E71_u7801" class="headerlink" title="SpringMVC乱码"></a>SpringMVC乱码</h2><p>如果学了SpringMVC框架可以直接在web.xml文件中加入乱码过滤器<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;filter&gt;</span><br><span class="line">	&lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt;</span><br><span class="line">	&lt;filter-class&gt;org.springframework.web.filter.CharacterEncodingFilter&lt;/filter-class&gt;</span><br><span class="line">	&lt;init-param&gt;</span><br><span class="line">		&lt;param-name&gt;encoding&lt;/param-name&gt;</span><br><span class="line">		&lt;param-value&gt;utf-8&lt;/param-value&gt;</span><br><span class="line">	&lt;/init-param&gt;</span><br><span class="line">&lt;/filter&gt;</span><br><span class="line">&lt;filter-mapping&gt;</span><br><span class="line">	&lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt;</span><br><span class="line">	&lt;url-pattern&gt;*.do&lt;/url-pattern&gt;</span><br><span class="line">&lt;/filter-mapping&gt;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -276,7 +279,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/JavaWeb/" rel="tag">#JavaWeb</a>
           
         </div>
       
@@ -285,13 +288,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/12/09/Hello-hexo/" rel="next" title="用hexo+markdown+github建立属于自己的第一个blog网站">
+                <i class="fa fa-chevron-left"></i> 用hexo+markdown+github建立属于自己的第一个blog网站
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/03/JAVA/" rel="prev" title="网站开发防止乱码">
-                网站开发防止乱码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -317,8 +320,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/09/Hello-hexo/"
-           data-title="用hexo+markdown+github建立属于自己的第一个blog网站" data-url="http://yoursite.com/2015/12/09/Hello-hexo/">
+      <div class="ds-thread" data-thread-key="2016/02/03/JAVA/"
+           data-title="网站开发防止乱码" data-url="http://yoursite.com/2016/02/03/JAVA/">
       </div>
     
   </div>
@@ -432,7 +435,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Git"><span class="nav-number">1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u6587_u4EF6_u5939"><span class="nav-number">4.</span> <span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u6587_u4EF6_u5939-1"><span class="nav-number">5.</span> <span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u672C_u5730_u67E5_u770B"><span class="nav-number">6.</span> <span class="nav-text">本地查看</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F"><span class="nav-number">1.</span> <span class="nav-text">检查数据库编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F"><span class="nav-number">2.</span> <span class="nav-text">修改JSP页面编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F"><span class="nav-number">3.</span> <span class="nav-text">设置request编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F"><span class="nav-number">4.</span> <span class="nav-text">修改Tomcat编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#New_String_28_29_u65B9_u6CD5"><span class="nav-number">5.</span> <span class="nav-text">New String()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SpringMVC_u4E71_u7801"><span class="nav-number">6.</span> <span class="nav-text">SpringMVC乱码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
