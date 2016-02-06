@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="JavaWeb," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
+<meta name="description" content="Ajax+json通过springMVC处理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用hexo+markdown+github建立属于自己的第一个blog网站">
-<meta property="og:url" content="http://yoursite.com/2015/12/09/Hello-hexo/index.html">
+<meta property="og:title" content="springMVC处理ajax与json格式数据">
+<meta property="og:url" content="http://yoursite.com/2016/02/06/springMVC处理json格式/index.html">
 <meta property="og:site_name" content="GHT's Blog">
-<meta property="og:description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
-<meta property="og:updated_time" content="2016-02-03T12:08:46.220Z">
+<meta property="og:description" content="Ajax+json通过springMVC处理">
+<meta property="og:updated_time" content="2016-02-06T09:27:00.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用hexo+markdown+github建立属于自己的第一个blog网站">
-<meta name="twitter:description" content="最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -">
+<meta name="twitter:title" content="springMVC处理ajax与json格式数据">
+<meta name="twitter:description" content="Ajax+json通过springMVC处理">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> 用hexo+markdown+github建立属于自己的第一个blog网站 | GHT's Blog </title>
+  <title> springMVC处理ajax与json格式数据 | GHT's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -214,7 +214,7 @@
             
             
               
-                用hexo+markdown+github建立属于自己的第一个blog网站
+                springMVC处理ajax与json格式数据
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-09T22:21:06+08:00" content="2015-12-09">
-              2015-12-09
+            <time itemprop="dateCreated" datetime="2016-02-06T17:02:06+08:00" content="2016-02-06">
+              2016-02-06
             </time>
           </span>
 
@@ -237,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/09/Hello-hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/09/Hello-hexo/" itemprop="commentsCount"></span>
+                <a href="/2016/02/06/springMVC处理json格式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/06/springMVC处理json格式/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -259,16 +259,21 @@
       
 
       
-        <p>　　　最近迷上了github，一开始用的是jekyll+github但是由于jekyll使用的git操作指令太多总是出bug，不得已放弃投之hexo相比于jekyll hexo真心方便了很多- -</p>
+        <blockquote>
+<p>Ajax+json通过springMVC处理</p>
+</blockquote>
 <hr>
 <a id="more"></a>
-<h2 id="u5B89_u88C5Git"><a href="#u5B89_u88C5Git" class="headerlink" title="安装Git"></a>安装Git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自行百度</span><br></pre></td></tr></table></figure>
-<h2 id="u5B89_u88C5Node-js"><a href="#u5B89_u88C5Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>在 Windows 环境下安装 Node.js 非常简单，仅须下载安装文件并执行即可完成安装</p>
-<h2 id="u5B89_u88C5hexo"><a href="#u5B89_u88C5hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<h2 id="u521B_u5EFA_u6587_u4EF6_u5939"><a href="#u521B_u5EFA_u6587_u4EF6_u5939" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><p>安装完成后，在你喜爱的文件夹下（如<code>H:\hexo</code>），执行以下指令(在<code>H:\hexo</code>内点击鼠标右键，选择Git bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<h2 id="u521B_u5EFA_u6587_u4EF6_u5939-1"><a href="#u521B_u5EFA_u6587_u4EF6_u5939-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h2 id="u672C_u5730_u67E5_u770B"><a href="#u672C_u5730_u67E5_u770B" class="headerlink" title="本地查看"></a>本地查看</h2><p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在<code>H:\hexo</code>)，然后到浏览器输入<code>localhost:4000</code>看看。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-
+<h2 id="u5BFC_u5165_u4E09_u4E2A_u5F00_u53D1_u5305_u5173_u4E8Ejson_u7684"><a href="#u5BFC_u5165_u4E09_u4E2A_u5F00_u53D1_u5305_u5173_u4E8Ejson_u7684" class="headerlink" title="导入三个开发包关于json的"></a>导入三个开发包关于json的</h2><blockquote>
+<ul>
+<li>jackson-annotations-2.5.0.jar</li>
+<li>jackson-core-2.5.0.jar</li>
+<li>jackson-databind-2.5.0.jar</li>
+</ul>
+</blockquote>
+<h2 id="u4FEE_u6539xml_u6587_u4EF6"><a href="#u4FEE_u6539xml_u6587_u4EF6" class="headerlink" title="修改xml文件"></a>修改xml文件</h2><p>在spring-mvc.xml文件中加入以下代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id="stringConverter" class="org.springframework.http.converter.StringHttpMessageConverter"&gt;</span><br><span class="line">	        &lt;property name="supportedMediaTypes"&gt;</span><br><span class="line">	        	&lt;list&gt;</span><br><span class="line">	        		&lt;value&gt;text/plain;charset=UTF-8&lt;/value&gt;</span><br><span class="line">	        	&lt;/list&gt;</span><br><span class="line">	        &lt;/property&gt;</span><br><span class="line">&lt;/bean&gt;</span><br><span class="line">&lt;bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"&gt;&lt;/bean&gt;</span><br><span class="line">&lt;bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;</span><br><span class="line">        	&lt;property name="messageConverters"&gt;</span><br><span class="line">        		&lt;list&gt;</span><br><span class="line">        			&lt;ref bean="stringConverter"/&gt;</span><br><span class="line">        			&lt;ref bean="jsonConverter"/&gt;</span><br><span class="line">        		&lt;/list&gt;</span><br><span class="line">        	&lt;/property&gt;</span><br><span class="line">&lt;/bean&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="u5199Controller_u5C42"><a href="#u5199Controller_u5C42" class="headerlink" title="写Controller层"></a>写Controller层</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Controller;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.ResponseBody;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.ght.model.User;</span><br><span class="line"></span><br><span class="line"><span class="annotation">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonController</span> </span>&#123;</span><br><span class="line">	<span class="annotation">@RequestMapping</span>(<span class="string">"/json"</span>)</span><br><span class="line">	<span class="annotation">@ResponseBody</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">json</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List&lt;User&gt; list=<span class="keyword">new</span> ArrayList&lt;User&gt;();</span><br><span class="line">		list.add(<span class="keyword">new</span> User(<span class="string">"张三"</span>, <span class="string">"215"</span>));</span><br><span class="line">		list.add(<span class="keyword">new</span> User(<span class="string">"李四"</span>, <span class="string">"3234"</span>));</span><br><span class="line">		list.add(<span class="keyword">new</span> User(<span class="string">"赵六"</span>, <span class="string">"12213"</span>));</span><br><span class="line">		<span class="keyword">return</span> list;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="u5728jsp_u4E0A_u901A_u8FC7JQuery_u5199ajax_u4EE3_u7801"><a href="#u5728jsp_u4E0A_u901A_u8FC7JQuery_u5199ajax_u4EE3_u7801" class="headerlink" title="在jsp上通过JQuery写ajax代码"></a>在jsp上通过JQuery写ajax代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">%@</span> <span class="attribute">page</span> <span class="attribute">language</span>=<span class="value">"java"</span> <span class="attribute">contentType</span>=<span class="value">"text/html; charset=UTF-8"</span></span><br><span class="line">    <span class="attribute">pageEncoding</span>=<span class="value">"UTF-8"</span><span class="value">%</span>&gt;</span></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"$&#123;pageContext.request.contextPath&#125;/js/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Insert title here<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">json</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	$.ajax(&#123;</span><br><span class="line">		type:<span class="string">"POST"</span>,</span><br><span class="line">		url:<span class="string">"$&#123;pageContext.request.contextPath&#125;/json.do"</span>,</span><br><span class="line">		success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">			<span class="keyword">var</span> html=<span class="string">""</span>;</span><br><span class="line">			alert(data.length);</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;data.length;i++)&#123;</span><br><span class="line">				html+=<span class="string">"&lt;tr&gt;&lt;td&gt;"</span>+data[i].userName+<span class="string">"&lt;/td&gt;&lt;td&gt;"</span>+data[i].password+<span class="string">"&lt;/td&gt;&lt;/tr&gt;"</span></span><br><span class="line">			&#125;</span><br><span class="line">			$(<span class="string">"#content"</span>).html(html);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">value</span>=<span class="value">"获取数据"</span> <span class="attribute">onclick</span>=<span class="value">"json()"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">table</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">td</span>&gt;</span>用户名<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">td</span>&gt;</span>密码<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">tbody</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -276,7 +281,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/JavaWeb/" rel="tag">#JavaWeb</a>
           
         </div>
       
@@ -285,13 +290,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/02/03/JAVA/" rel="next" title="网站开发防止乱码">
+                <i class="fa fa-chevron-left"></i> 网站开发防止乱码
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/03/JAVA/" rel="prev" title="网站开发防止乱码">
-                网站开发防止乱码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -317,8 +322,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/09/Hello-hexo/"
-           data-title="用hexo+markdown+github建立属于自己的第一个blog网站" data-url="http://yoursite.com/2015/12/09/Hello-hexo/">
+      <div class="ds-thread" data-thread-key="2016/02/06/springMVC处理json格式/"
+           data-title="springMVC处理ajax与json格式数据" data-url="http://yoursite.com/2016/02/06/springMVC处理json格式/">
       </div>
     
   </div>
@@ -432,7 +437,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Git"><span class="nav-number">1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u6587_u4EF6_u5939"><span class="nav-number">4.</span> <span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u6587_u4EF6_u5939-1"><span class="nav-number">5.</span> <span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u672C_u5730_u67E5_u770B"><span class="nav-number">6.</span> <span class="nav-text">本地查看</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5BFC_u5165_u4E09_u4E2A_u5F00_u53D1_u5305_u5173_u4E8Ejson_u7684"><span class="nav-number">1.</span> <span class="nav-text">导入三个开发包关于json的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539xml_u6587_u4EF6"><span class="nav-number">2.</span> <span class="nav-text">修改xml文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5199Controller_u5C42"><span class="nav-number">3.</span> <span class="nav-text">写Controller层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5728jsp_u4E0A_u901A_u8FC7JQuery_u5199ajax_u4EE3_u7801"><span class="nav-number">4.</span> <span class="nav-text">在jsp上通过JQuery写ajax代码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
