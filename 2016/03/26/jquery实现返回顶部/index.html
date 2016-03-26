@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaWeb," />
+  <meta name="keywords" content="前端," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
+<meta name="description" content="通过jquery实现返回到顶部效果">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站开发防止乱码">
-<meta property="og:url" content="http://yoursite.com/2016/02/03/JAVA/index.html">
+<meta property="og:title" content="jquery实现返回顶部">
+<meta property="og:url" content="http://yoursite.com/2016/03/26/jquery实现返回顶部/index.html">
 <meta property="og:site_name" content="GHT's Blog">
-<meta property="og:description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
-<meta property="og:updated_time" content="2016-02-03T12:55:45.135Z">
+<meta property="og:description" content="通过jquery实现返回到顶部效果">
+<meta property="og:updated_time" content="2016-03-26T12:26:24.021Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站开发防止乱码">
-<meta name="twitter:description" content="学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案">
+<meta name="twitter:title" content="jquery实现返回顶部">
+<meta name="twitter:description" content="通过jquery实现返回到顶部效果">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> 网站开发防止乱码 | GHT's Blog </title>
+  <title> jquery实现返回顶部 | GHT's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -214,7 +214,7 @@
             
             
               
-                网站开发防止乱码
+                jquery实现返回顶部
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-03T20:05:06+08:00" content="2016-02-03">
-              2016-02-03
+            <time itemprop="dateCreated" datetime="2016-03-26T20:26:06+08:00" content="2016-03-26">
+              2016-03-26
             </time>
           </span>
 
@@ -237,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/03/JAVA/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/03/JAVA/" itemprop="commentsCount"></span>
+                <a href="/2016/03/26/jquery实现返回顶部/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/jquery实现返回顶部/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -260,18 +260,13 @@
 
       
         <blockquote>
-<p>学习网站开发最头疼的事莫过于乱码，本文介绍几种解决乱码的方案</p>
+<p>通过jquery实现返回到顶部效果</p>
 </blockquote>
 <hr>
 <a id="more"></a>
-<h2 id="u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F"><a href="#u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F" class="headerlink" title="检查数据库编码格式"></a>检查数据库编码格式</h2><p></p><p>安装数据库的的时候没有选择<code>utf-8</code>的编码格式所以会导致传到数据库里面的数据发生乱码</p><p></p>
-<h2 id="u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F"><a href="#u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F" class="headerlink" title="修改JSP页面编码格式"></a>修改JSP页面编码格式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">"text/html; charset=UTF-8"</span> %&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F"><a href="#u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F" class="headerlink" title="设置request编码格式"></a>设置request编码格式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F"><a href="#u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F" class="headerlink" title="修改Tomcat编码格式"></a>修改Tomcat编码格式</h2><p> 修改Tomcat根目录中conf子目录下的server.xml文件，在中加入URIEncoding=”UTF-8”<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Connector connectionTimeout=<span class="string">"20000"</span></span><br><span class="line">port=<span class="string">"8080"</span></span><br><span class="line">protocol=<span class="string">"HTTP/1.1"</span></span><br><span class="line">redirectPort=<span class="string">"8443"</span></span><br><span class="line">URIEncoding=<span class="string">"UTF-8"</span>/&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="New_String_28_29_u65B9_u6CD5"><a href="#New_String_28_29_u65B9_u6CD5" class="headerlink" title="New String()方法"></a>New String()方法</h2><p>用户在使用这个方法的时候需要确定源编码和目标编码各是什么，才能解决中文乱码问题。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String p = <span class="keyword">new</span> String(p.getBytes(“ISO-<span class="number">8859</span>-<span class="number">1</span>”),”utf-<span class="number">8</span>”)</span><br></pre></td></tr></table></figure></p>
-<p>一般使用这个就可以完美解决乱码问题</p>
-<h2 id="SpringMVC_u4E71_u7801"><a href="#SpringMVC_u4E71_u7801" class="headerlink" title="SpringMVC乱码"></a>SpringMVC乱码</h2><p>如果学了SpringMVC框架可以直接在web.xml文件中加入乱码过滤器<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;filter&gt;</span><br><span class="line">	&lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt;</span><br><span class="line">	&lt;filter-class&gt;org.springframework.web.filter.CharacterEncodingFilter&lt;/filter-class&gt;</span><br><span class="line">	&lt;init-param&gt;</span><br><span class="line">		&lt;param-name&gt;encoding&lt;/param-name&gt;</span><br><span class="line">		&lt;param-value&gt;utf-8&lt;/param-value&gt;</span><br><span class="line">	&lt;/init-param&gt;</span><br><span class="line">&lt;/filter&gt;</span><br><span class="line">&lt;filter-mapping&gt;</span><br><span class="line">	&lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt;</span><br><span class="line">	&lt;url-pattern&gt;*.do&lt;/url-pattern&gt;</span><br><span class="line">&lt;/filter-mapping&gt;</span><br></pre></td></tr></table></figure></p>
-
+<h2 id="html_u4EE3_u7801"><a href="#html_u4EE3_u7801" class="headerlink" title="html代码"></a>html代码</h2><p>在html文件中写入以下代码<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">id</span>=<span class="value">"toTop"</span> <span class="attribute">style</span>=<span class="value">"display: block;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="u7F16_u5199JavaScript_u4EE3_u7801"><a href="#u7F16_u5199JavaScript_u4EE3_u7801" class="headerlink" title="编写JavaScript代码"></a>编写JavaScript代码</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">$(function() &#123;</span><br><span class="line">	$('#toTop').fadeIn('slow');  </span><br><span class="line">	</span><br><span class="line">	$(window).bind('scrollstart', function()&#123;</span><br><span class="line">		$('#toTop').stop().animate(&#123;'opacity':'0.2'&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">	$(window).bind('scrollstop', function()&#123;</span><br><span class="line">		$('#toTop').stop().animate(&#123;'opacity':'1'&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">	</span><br><span class="line">	$('#toTop').click(</span><br><span class="line">		function (e) &#123;</span><br><span class="line">			$('html').animate(&#123;scrollTop: '0px'&#125;,500);</span><br><span class="line">		&#125;</span><br><span class="line">	);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B"><a href="#u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B" class="headerlink" title="最后CSS样式布局一下"></a>最后CSS样式布局一下</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#toTop</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value">fixed</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">bottom</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">right</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-indent</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left top</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTopHover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left -<span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">-moz-opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">filter</span>:<span class="value"><span class="function">alpha</span>(opacity=<span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTop</span><span class="pseudo">:active</span>, <span class="id">#toTop</span><span class="pseudo">:focus</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">outline</span>:<span class="value">none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -279,7 +274,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaWeb/" rel="tag">#JavaWeb</a>
+            <a href="/tags/前端/" rel="tag">#前端</a>
           
         </div>
       
@@ -288,17 +283,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/09/Hello-hexo/" rel="next" title="用hexo+markdown+github建立属于自己的第一个blog网站">
-                <i class="fa fa-chevron-left"></i> 用hexo+markdown+github建立属于自己的第一个blog网站
+              <a href="/2016/02/06/springMVC处理json格式/" rel="next" title="springMVC处理ajax与json格式数据">
+                <i class="fa fa-chevron-left"></i> springMVC处理ajax与json格式数据
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/06/springMVC处理json格式/" rel="prev" title="springMVC处理ajax与json格式数据">
-                springMVC处理ajax与json格式数据 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -324,8 +315,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/03/JAVA/"
-           data-title="网站开发防止乱码" data-url="http://yoursite.com/2016/02/03/JAVA/">
+      <div class="ds-thread" data-thread-key="2016/03/26/jquery实现返回顶部/"
+           data-title="jquery实现返回顶部" data-url="http://yoursite.com/2016/03/26/jquery实现返回顶部/">
       </div>
     
   </div>
@@ -439,7 +430,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u68C0_u67E5_u6570_u636E_u5E93_u7F16_u7801_u683C_u5F0F"><span class="nav-number">1.</span> <span class="nav-text">检查数据库编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539JSP_u9875_u9762_u7F16_u7801_u683C_u5F0F"><span class="nav-number">2.</span> <span class="nav-text">修改JSP页面编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8BBE_u7F6Erequest_u7F16_u7801_u683C_u5F0F"><span class="nav-number">3.</span> <span class="nav-text">设置request编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539Tomcat_u7F16_u7801_u683C_u5F0F"><span class="nav-number">4.</span> <span class="nav-text">修改Tomcat编码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#New_String_28_29_u65B9_u6CD5"><span class="nav-number">5.</span> <span class="nav-text">New String()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SpringMVC_u4E71_u7801"><span class="nav-number">6.</span> <span class="nav-text">SpringMVC乱码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#html_u4EE3_u7801"><span class="nav-number">1.</span> <span class="nav-text">html代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7F16_u5199JavaScript_u4EE3_u7801"><span class="nav-number">2.</span> <span class="nav-text">编写JavaScript代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B"><span class="nav-number">3.</span> <span class="nav-text">最后CSS样式布局一下</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
