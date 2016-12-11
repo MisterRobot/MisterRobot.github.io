@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端," />
+  <meta name="keywords" content="appcan," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="通过jquery实现返回到顶部效果">
+<meta name="description" content="appcan的实时定位功能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jquery实现返回顶部">
-<meta property="og:url" content="http://yoursite.com/2016/03/26/jquery实现返回顶部/index.html">
+<meta property="og:title" content="appcan定位功能">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/appcan定位功能/index.html">
 <meta property="og:site_name" content="GHT's Blog">
-<meta property="og:description" content="通过jquery实现返回到顶部效果">
-<meta property="og:updated_time" content="2016-03-26T12:26:24.000Z">
+<meta property="og:description" content="appcan的实时定位功能">
+<meta property="og:updated_time" content="2016-12-08T05:46:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jquery实现返回顶部">
-<meta name="twitter:description" content="通过jquery实现返回到顶部效果">
+<meta name="twitter:title" content="appcan定位功能">
+<meta name="twitter:description" content="appcan的实时定位功能">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> jquery实现返回顶部 | GHT's Blog </title>
+  <title> appcan定位功能 | GHT's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -214,7 +214,7 @@
             
             
               
-                jquery实现返回顶部
+                appcan定位功能
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-26T20:26:06+08:00" content="2016-03-26">
-              2016-03-26
+            <time itemprop="dateCreated" datetime="2016-12-08T13:29:06+08:00" content="2016-12-08">
+              2016-12-08
             </time>
           </span>
 
@@ -237,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/26/jquery实现返回顶部/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/jquery实现返回顶部/" itemprop="commentsCount"></span>
+                <a href="/2016/12/08/appcan定位功能/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/08/appcan定位功能/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -260,13 +260,12 @@
 
       
         <blockquote>
-<p>通过jquery实现返回到顶部效果</p>
+<p>appcan的实时定位功能</p>
 </blockquote>
 <hr>
 <a id="more"></a>
-<h2 id="html_u4EE3_u7801"><a href="#html_u4EE3_u7801" class="headerlink" title="html代码"></a>html代码</h2><p>在html文件中写入以下代码<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">id</span>=<span class="value">"toTop"</span> <span class="attribute">style</span>=<span class="value">"display: block;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="u7F16_u5199JavaScript_u4EE3_u7801"><a href="#u7F16_u5199JavaScript_u4EE3_u7801" class="headerlink" title="编写JavaScript代码"></a>编写JavaScript代码</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">$(function() &#123;</span><br><span class="line">	$('#toTop').fadeIn('slow');  </span><br><span class="line">	</span><br><span class="line">	$(window).bind('scrollstart', function()&#123;</span><br><span class="line">		$('#toTop').stop().animate(&#123;'opacity':'0.2'&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">	$(window).bind('scrollstop', function()&#123;</span><br><span class="line">		$('#toTop').stop().animate(&#123;'opacity':'1'&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">	</span><br><span class="line">	$('#toTop').click(</span><br><span class="line">		function (e) &#123;</span><br><span class="line">			$('html').animate(&#123;scrollTop: '0px'&#125;,500);</span><br><span class="line">		&#125;</span><br><span class="line">	);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B"><a href="#u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B" class="headerlink" title="最后CSS样式布局一下"></a>最后CSS样式布局一下</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#toTop</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value">fixed</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">bottom</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">right</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-indent</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left top</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTopHover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left -<span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">-moz-opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">filter</span>:<span class="value"><span class="function">alpha</span>(opacity=<span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTop</span><span class="pseudo">:active</span>, <span class="id">#toTop</span><span class="pseudo">:focus</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">outline</span>:<span class="value">none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">## 编写JavaScript代码</span><br><span class="line">在初始化方法中初始化定位函数，当位置一发生改变就会被执行</span><br><span class="line">``` javascript</span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">  <span class="built_in">window</span>.uexOnload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">             uexLocation.onChange = locationCallback;</span><br><span class="line">             locationFun();</span><br><span class="line">        &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="u56DE_u8C03_u51FD_u6570_u4E2D_u83B7_u53D6_u7ECF_u5EA6_u7EAC_u5EA6"><a href="#u56DE_u8C03_u51FD_u6570_u4E2D_u83B7_u53D6_u7ECF_u5EA6_u7EAC_u5EA6" class="headerlink" title="回调函数中获取经度纬度"></a>回调函数中获取经度纬度</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#toTop</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value">fixed</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">bottom</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">right</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value">none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-indent</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left top</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTopHover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(..) no-repeat left -<span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">51px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">-moz-opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">filter</span>:<span class="value"><span class="function">alpha</span>(opacity=<span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#toTop</span><span class="pseudo">:active</span>, <span class="id">#toTop</span><span class="pseudo">:focus</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">outline</span>:<span class="value">none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -274,7 +273,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/前端/" rel="tag">#前端</a>
+            <a href="/tags/appcan/" rel="tag">#appcan</a>
           
         </div>
       
@@ -283,17 +282,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/06/springMVC处理json格式/" rel="next" title="springMVC处理ajax与json格式数据">
-                <i class="fa fa-chevron-left"></i> springMVC处理ajax与json格式数据
+              <a href="/2016/03/26/jquery实现返回顶部/" rel="next" title="jquery实现返回顶部">
+                <i class="fa fa-chevron-left"></i> jquery实现返回顶部
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/08/appcan定位功能/" rel="prev" title="appcan定位功能">
-                appcan定位功能 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -319,8 +314,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/26/jquery实现返回顶部/"
-           data-title="jquery实现返回顶部" data-url="http://yoursite.com/2016/03/26/jquery实现返回顶部/">
+      <div class="ds-thread" data-thread-key="2016/12/08/appcan定位功能/"
+           data-title="appcan定位功能" data-url="http://yoursite.com/2016/12/08/appcan定位功能/">
       </div>
     
   </div>
@@ -434,7 +429,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#html_u4EE3_u7801"><span class="nav-number">1.</span> <span class="nav-text">html代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7F16_u5199JavaScript_u4EE3_u7801"><span class="nav-number">2.</span> <span class="nav-text">编写JavaScript代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6700_u540ECSS_u6837_u5F0F_u5E03_u5C40_u4E00_u4E0B"><span class="nav-number">3.</span> <span class="nav-text">最后CSS样式布局一下</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u56DE_u8C03_u51FD_u6570_u4E2D_u83B7_u53D6_u7ECF_u5EA6_u7EAC_u5EA6"><span class="nav-number">1.</span> <span class="nav-text">回调函数中获取经度纬度</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
